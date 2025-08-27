@@ -21,7 +21,7 @@
 title: "My Blog"
 
 # Devlopr에서 히어로에 쓰는 값들
-username: "Hyemin Song"        # 화면에 'Hi, I am {{ username }}' 로 표시됨
+name: "Hyemin Song"             # ← username 대신 name 사용
 user_title: "Backend Developer" # 이름 아래 직함
 
 
@@ -35,14 +35,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/git_test" # the subpath of your site, e.g. /blog
-url: "https://hyeminSsong.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
+baseurl: "/git_test"
+url: "https://hyeminSsong.github.io"
 github_username:  hyeminSsong
 
 # Build settings
 remote_theme: sujaykundu777/devlopr-jekyll
-theme: minima
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
