@@ -1,0 +1,12 @@
+<section class="intro">
+  <div class="container text-center">
+    {% assign display_name = site.name | default: site.author.name | default: site.github.owner_name %}
+    {% if site.avatar %}
+      <img src="{{ site.avatar | relative_url }}" alt="{{ display_name }}" style="width:120px;height:120px;border-radius:50%;object-fit:cover;">
+    {% endif %}
+    <h1>Hi, I am {{ display_name }}</h1>
+    {% if site.user_title %}
+      <p>{{ site.user_title }}</p>
+    {% endif %}
+  </div>
+</section>
