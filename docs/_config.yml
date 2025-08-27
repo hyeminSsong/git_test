@@ -19,6 +19,17 @@
 # in the templates via {{ site.myvariable }}.
 
 title: "My Blog"
+
+# Devlopr에서 히어로에 쓰는 값들
+username: "Hyemin Song"        # 화면에 'Hi, I am {{ username }}' 로 표시됨
+user_title: "Backend Developer" # 이름 아래 직함
+
+
+# 아래 중 테마가 지원하는 키를 사용
+typing: false
+typed: false
+use_animations: false
+
 email: "hyeminsSsong@example.com"
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
