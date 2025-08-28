@@ -1,9 +1,16 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
-title: "Welcome"
+layout: default
+title: "Home"
 ---
-# 안녕하세요
-블로그 첫 화면 테스트입니다.
+<section style="text-align:center; padding:60px 0">
+  <h1>Hi, I am {{ site.name }}</h1>
+  <p>{{ site.user_title }}</p>
+</section>
+
+<h2>Recent Articles</h2>
+<ul>
+{% for post in site.posts limit:10 %}
+  <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <small> · {{ post.date | date: "%Y-%m-%d" }}</small></li>
+{% endfor %}
+</ul>
